@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+  
+    <title>Culqi Test</title>
+    <link rel="stylesheet" href="waitMe.min.css"/>
+
+    <link rel="icon" href="https://www.culqi.com/wp-content/uploads/2019/04/favicon.png" sizes="192x192">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <link rel="stylesheet" href="css/app.css" >
+
+  </head>
+  <body>
+
+    <div class="fondo">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header menu">
+                  <a class="navbar-brand" href="https://www.culqi.com/" target="_blank"><img src="https://www.culqi.com/wp-content/uploads/2018/12/culqui-logo-blanco.svg"></a>
+                  <h3 class="text-center" ></h3>
+                  
+                </a>
+              </div>
+            </div>
+          </nav>
+
+
+        <div class="container">
+            
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                          <label for="usr">Llave Publica:</label>
+                          <input id="publica" type="text" class="form-control" style="width:80%"><br>
+                          <label for="pwd">Llave Secreta:</label>
+                          <input id="secreta" type="text" class="form-control"  style="width:80%"> <br>
+                          <label>Monto a cobrar:</label>
+                          <input  id="monto" type="number" class="form-control" style="width:80%"><br>
+                          
+                        </div><br><br>
+                        <input id="currency_code" type="checkbox" name="moneda" data-on="Soles" data-off="Dólares"  checked data-toggle="toggle"><br><br><br>
+                        <a id="miBoton" class="btn btn-success btn-lg" href="#" >Pagar deuda del comercio</a> <br><br>
+                      </form>
+                </div> 
+                <div class="col-md-6">
+                    <div class="panel panel-default" id="response-panel">
+                        <div class="panel-heading"><label>Mensaje para el comercio</label></div>
+                        <div class="panel-body" id="response">
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="response-panel-1">
+                        <div class="panel-heading"><label>Mensaje para el usuario</label></div>
+                        <div class="panel-body" id="response-1"></div>
+                    </div>
+                </div>       
+            </div>
+            
+      
+          </div>
+    </div>
+   
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://checkout.culqi.com/js/v3"></script>
+    <script src="waitMe.min.js"></script>
+    <script type="text/javascript" src="js/app.js" ></script>
+  </body>
+</html>
